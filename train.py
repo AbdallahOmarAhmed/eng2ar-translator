@@ -63,7 +63,8 @@ def save_vocab(vocab, path):
 
 
 if __name__ == '__main__':
-
+    if not os.path.isdir('experiments'):
+        os.mkdir('experiments')
     dir_num = -1
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     SRC_PAD_IDX = SRC.vocab.stoi[SRC.pad_token]
