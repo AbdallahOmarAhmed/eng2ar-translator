@@ -8,3 +8,5 @@ run : $ ``` python3 train.py ```
 # Test 
 
 run $ ``` python3 test.py [experiment number] ```
+
+### more details coming soon!
